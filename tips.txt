@@ -1,0 +1,39 @@
+before you use:
+    -please cite this work if you found it useful. details for citation can be found in README.md
+    -please provide citations for any datasets you use for your work. E.g. if you are using StylePTB's (https://github.com/lvyiwei1/StylePTB) voice, tenses and ppr dataset from our ./data,
+    please provide a citation for the original author's work.
+    -please use these models responsibly and comply with guidelines for ethical use of AI. (https://www.acm.org/code-of-ethics)
+
+tips:
+    -the outputs that were used to compute statistics reported in the paper along with preprocessed datasets used are available at:
+    https://drive.google.com/drive/folders/1ZvAPAfd_pGFb37vA9gOyTBUiEOgPmHBJ?usp=sharing
+    -if you are using any of the pre-processed datasets from this work, please cite the original authors.
+    - to compute content preservation metrics, use: https://github.com/Maluuba/nlg-eval
+    - to compute naturalness or fluency metric, use: https://github.com/passeul/style-transfer-model-evaluation
+    -Use the following batch sizes while training
+        yelp: batch_size 256
+        snli: batch_size 256
+        dnli: batch_size 256
+        qqp: batch_size 256
+        scitail: batch_size 32
+        voices: batch_size 32
+        tenses: batch_size 32
+        ppr: batch_size 32
+    - for all other hyper parameters, use those mentioned in paper or the default args in every script.
+    - train for epochs = 30 and test on last 10 checkpoints i.e. model.pt20-30 to determine best model.
+    - if you want to train a brand new model with a newly created vocab, delete the original dir so that the old vocab.txt is not reused.
+    - if you want to run EPAAE for your own dataset, preprocess your dataset to follow the same format as any one of the already available pre
+    processed datasets from this work. Place it in ./data and call it according to examples mentioned in README.md.
+
+contact:
+    -please contact me for any help or questions: sharan.n21@gmail.com
+    -report any bugs or questions on the "Issues" page and we will respond as soon as possible.
+   
+
+
+
+
+
+
+
+
