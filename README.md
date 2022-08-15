@@ -50,6 +50,11 @@ python test.py --sample --n 10000 --output sample --checkpoint checkpoints/snli/
 `
 Please check test.py for more experiment scripts such as TSNE, interpolation, reconstruction. For any questions or reports of bugs, please add an issue and we will resolve it.
 
+## Pretrained models and outputs
+Please download and use the models we trained as part of this paper:
+https://drive.google.com/drive/folders/1fWXr8trmpqzaRCYzgnYzurdm3zwJpedN?usp=sharing
+Use --checkpoint to specify the path of the model. Please feel free to create an issue or email me regarding doubts or issues.
+
 ## Citation
 @article{Narasimhan2022TowardsRA,
   title={Towards Robust and Semantically Organised Latent Representations for Unsupervised Text Style Transfer},
